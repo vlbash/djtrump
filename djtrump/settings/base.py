@@ -83,9 +83,10 @@ WSGI_APPLICATION = 'djtrump.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': os.environ.get('DATABASE_NAME', 'djtrump'),
-        'USER': 'djtrumpuser',
-        'PASSWORD': 'password',
+        'NAME':  'djtrump',
+        'USER': 'socserv',
+        'HOST': '192.168.25.11',
+        'PASSWORD': 'socServ',
         'PORT': '5432',
     }
 }
